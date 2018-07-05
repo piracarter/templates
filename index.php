@@ -3,5 +3,9 @@ echo '¡Mi nombre de usuario es ' . $_ENV["NOMBRE_USUARIO"] . '! Mi estado de an
 
 
 $salida = shell_exec('uptime');
-echo "<pre>$salida</pre>";
+echo "<P>$salida</P>";
+
+$salida = shell_exec('uname -a');
+echo "<P>$salida</P>";
+
 ?>
